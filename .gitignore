@@ -1,0 +1,28 @@
+# Maven
+nutriflow-backend/target/
+
+# Node
+nutriflow-frontend/node_modules/
+nutriflow-frontend/dist/
+
+# Environment files (never commit real credentials)
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.staging
+nutriflow-backend/.env
+nutriflow-frontend/.env.*
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

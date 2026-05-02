@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"c:/Users/natal/OneDrive/文件/NutriFlow/nutriflow-backend/src/main/java/com/nutriflow/config\")",
+      "Bash(mkdir -p \"c:/Users/natal/OneDrive/文件/NutriFlow/nutriflow-backend/src/main/java/com/nutriflow/controller\")",
+      "Bash(mkdir -p \"c:/Users/natal/OneDrive/文件/NutriFlow/nutriflow-backend/src/main/java/com/nutriflow/service\")",
+      "Bash(mkdir -p \"c:/Users/natal/OneDrive/文件/NutriFlow/nutriflow-backend/src/main/java/com/nutriflow/repository\")",
+      "Bash(mkdir -p \"c:/Users/natal/OneDrive/文件/NutriFlow/nutriflow-backend/src/main/java/com/nutriflow/entity\")"
+    ]
+  }
+}

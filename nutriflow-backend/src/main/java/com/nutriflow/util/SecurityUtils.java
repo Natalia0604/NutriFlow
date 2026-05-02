@@ -1,0 +1,20 @@
+package com.nutriflow.util;
+
+import com.nutriflow.repository.UserRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.stereotype.Component;
+
+@Component
+@RequiredArgsConstructor
+public class SecurityUtils {
+
+    private final UserRepository userRepository;
+
+    public Long getCurrentUserId() {
+        String email = SecurityContextHolder.getContext().getAuthentication().getName();
+        return userRepository.findByEmail(email)
+                .orElseThrow(() -> new IllegalStateException("Authenticated user not found"))
+                .getId();
+    }
+}
